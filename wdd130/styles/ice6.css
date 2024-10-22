@@ -1,0 +1,33 @@
+.grid-box {
+  display: grid;
+  grid-template-columns: 1/3;
+  grid-template-rows: auto 1/4;
+  grid-template-areas:
+    "header header"
+    "content content";
+  gap: 20px;
+}
+
+#tart {
+  grid-area: header;
+  text-align: center;
+  background-color: #f0f0f0; 
+  padding: 10px;
+}
+
+.greybox {
+  grid-area: 4/4;
+  background-color: #ccc; 
+}
+
+#twocherries {
+  grid-area: content;
+  width: 100%; 
+  height: auto; 
+}
+
+#cherries {
+  grid-area: content;
+  text-align: center;
+  margin-top: 10px; 
+}
